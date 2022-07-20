@@ -1,3 +1,3 @@
 # world-cup
-click here: https://github.com/munnikhanam/world-cup
+click here: https://munnikhanam.github.io/world-cup/
 
