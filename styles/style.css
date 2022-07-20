@@ -1,0 +1,264 @@
+/* google-font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* common-styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+ul,ol{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+/* banner-styles */
+.container{
+    width: 1321px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    background: #000;
+    border-radius: 10px;
+    padding: 20px 50px 0 0;
+}
+.banner .text{
+    padding: 20px 80px;
+}
+.text h1{
+    font-size: 70px;
+    font-weight: 700;
+}
+.text p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+ .button{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #DD0000;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.fa-arrow-right.arrow{
+    color: #FFFFFF;
+    margin: 10px 10px;
+}
+.player-img{
+    width: 581px;
+    height: 613px;
+}
+.player-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* up-coming-matches styles */
+.upcoming-match{
+    color: #000;
+    margin: 30px 0;
+    background-color: #FFFFFF;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 20px;
+}
+.link .link-button{
+    color: #000;
+    background: #FFFFFF;
+    padding: 10px 10px;
+    width: 174px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    transition: 2s;
+
+}
+.link .selected{
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+.link .link-button:hover{
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+.matches{
+    display: grid;
+    grid-template-columns: 312px auto;
+}
+.live-matches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+}
+.match{
+    background: #E8E8E8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #E8E8E8;
+    padding: 20px;
+}
+.match-img{
+    display: flex;
+    flex-direction: row;
+}
+.match-img img{
+    width: 100%;
+}
+.match-text{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.match-button{
+    color: #000;
+    padding: 5px 10px;
+    background: #E8E8E8;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.match h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.match-info{
+    display: flex;
+    
+    margin: 10px;
+}
+.match-info .match-time,.match-message{
+    color: #161616;
+}
+.match-time{
+    margin-right: 20px;
+}
+.tab-button{
+    visibility: hidden;
+}
+/* participnt-html styles */
+.play-time{
+    text-align: center;
+    margin-top: 55px;
+}
+.oposite{
+    margin: 35px 15px;
+}
+/* footer-styles */
+.footer-list{
+    background: #000;
+    text-align: center;
+}
+.footer-list h2{
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+hr{
+    border: 1px solid #B9B9B9;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+}
+.list-item li a{
+    color: #B9B9B9;
+}
+
+
+/* @media-styles */
+/* smaller device */
+@media only screen and (max-width:576px) {
+    .container{
+        width: 100%;
+    }
+    .banner, .matches, .live-matches{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 20px;
+        padding: 0;
+        justify-content: center;
+    }
+    .banner .text{
+        padding: 0;
+    }
+    .banner .text h1{
+        font-size: 40px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .player-img{
+        width: 100%;
+        height: 100%;
+    }
+    ul{
+        flex-direction: column;
+    }
+}
+/* small and tab styles */
+@media screen and (min-width:577px) and (max-width:867px) {
+    .container{
+        width: 100%;
+    
+    }
+    .banner, .live-matches{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 20px;
+        padding: 0px;
+        justify-content: center;
+    }
+    
+    .banner .text{
+        padding: 0;
+    }
+    .banner .text h1{
+        font-size: 40px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .player-img{
+        width: 100%;
+        height: 100%;
+    }
+    .matches{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 20px;
+        align-items: center;
+    }
+    .link{
+        flex-direction: row;
+        margin-left: 20px;
+    }
+    .tab-button{
+        visibility: visible;
+    }
+    ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px 0;
+
+    }
+    ul li{
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+}
