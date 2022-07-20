@@ -168,7 +168,8 @@ main{
 .footer-list h2{
     font-size: 70px;
     font-weight: 700;
-    padding-top: 50px;
+    padding-top: 40px;
+    margin: 10px 0;
 }
 hr{
     border: 1px solid #B9B9B9;
@@ -177,12 +178,24 @@ ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 .list-item li a{
     color: #B9B9B9;
 }
+.social-icon{
+    padding: 30px 0;
+}
+.social-icon a{
+    color: #B9B9B9;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: 3s;
 
+}
+.social-icon a:hover{
+    color: #DD0000;
+}
 
 /* @media-styles */
 /* smaller device */
